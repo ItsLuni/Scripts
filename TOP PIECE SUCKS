@@ -12,7 +12,6 @@ _G.Fruit = false -- Spins for fruits
 _G.Drop = true -- Drops all fruits / tools in inv
 loadstring(game:HttpGet("https://roflux.net/scripts/games/open/rainbowpiece.lua", true))()
 end
-
 Section:NewKeybind("Toggle UI", "Toggle The UI On And Off", Enum.KeyCode.RightCtrl, function()
 	Library:ToggleUI()
 end)
