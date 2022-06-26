@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("TOP PIECE SUCKS", "BloodTheme")
-local Tab = Window:NewTab("Main")
+local Tab = Window:NewTab("Fruits")
 local Section = Tab:NewSection("Get All Legend Fruits")
 Section:NewToggle("Toggle", ".", function(state)
 if state then
@@ -11,5 +11,10 @@ else
 _G.Fruit = false -- Spins for fruits
 _G.Drop = true -- Drops all fruits / tools in inv
 loadstring(game:HttpGet("https://roflux.net/scripts/games/open/rainbowpiece.lua", true))()
+-- Settings
+    local S = Window:NewTab("Settings")
+    local SSection = S:NewSection("Settings")
+    SSection:NewKeybind("Toggle UI", "Toggle The Ui On and off", Enum.KeyCode.LeftShift, function()
+        Library:ToggleUI()
 end
 end)
